@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>App de gastost</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <div class="text-white align-items-center justify-content-center bg-primary p-5">
+    <h1 class="text-center fw-bold"> App de gastos </h1>
+    <p class="text-center fw-bold"> ingresa cuánto pagó cada persona</p>
+    </div>
+    <main class="container">
+    <div class="d-inline">
+        <form name="formulario">
+            
+            <input  type="text" name="name"  id="name" placeholder="Ingrese un nombre" class="border border-2 border-secondary m-2 rounded fw-semibold">
+            <br>
+            <input  type="number" name="monto" id="monto" placeholder="Ingrese un monto" min="10" class="border border-2 border-secondary m-2 rounded fw-semibold">
+            <br>
+            <input type="button" value="Enviar" onclick="obtenerdatos()" class="btn btn-danger m-2 fw-bold "> 
+            <button class="btn btn-danger m-2 fw-bold">Refrescar</button>
+        </form>
+        
+    </div>
+    <div >
+        <div id = "pGasto"></div>
+    </div>
+
+    <div id="total" class="fw-bold"></div>
+</main>
+    <script src="script.js"></script>
+
+</body>
+</html>
